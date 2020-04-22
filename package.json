@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "aframe": "^1.0.4"
+  },
+  "name": "aframe",
+  "version": "0.0.1",
+  "description": "WebXR study",
+  "main": "index.js",
+  "author": "Alexander Pavlenko",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
