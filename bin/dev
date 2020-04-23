@@ -1,1 +1,3 @@
-../node_modules/.bin/webpack-dev-server
+#!/usr/bin/env bash
+export WASM_PACK_PATH=$(realpath "$(dirname "${BASH_SOURCE[0]}")")/wasm-pack-wrapper
+exec node_modules/.bin/webpack-dev-server

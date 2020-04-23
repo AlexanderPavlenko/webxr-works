@@ -2,6 +2,11 @@ const path = require('path');
 const WasmPackPlugin = require('@wasm-tool/wasm-pack-plugin');
 
 module.exports = {
+  entry: {
+    index: './src/index.js',
+    life: './src/life.js'
+  },
+
   devServer: {
     contentBase: path.join(__dirname, 'www'),
     watchContentBase: true,

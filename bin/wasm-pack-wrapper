@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+wasm-pack "$@"
+DIR=$(dirname "${BASH_SOURCE[0]}")
+echo 'export const memory = wasm.memory;' >> "$DIR"/../rust/pkg/index.js
+echo "Hackety hack from bin/wasm-pack-wrapper!"
