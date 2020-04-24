@@ -3,8 +3,9 @@
     <script src="/index.js"></script>
 </head>
 <body>
-<a-scene>
-    <a-box position="0 0 -4" color="blue"></a-box>
+<a-scene control-gamepad>
+    <a-box position="0 0 -1" animation="property: components.material.material.color; type: color; from: hsl(0, 100%, 50%); to: hsl(300, 100%, 50%); dur: 1000; loop: true"></a-box>
+<!--    <a-gltf-model src="Mq_042420_092008_Scene0.glb" position="0 1 -1" rotation="0 -100 0" scale="3 3 3 "></a-gltf-model>-->
 </a-scene>
 </body>
 </html>

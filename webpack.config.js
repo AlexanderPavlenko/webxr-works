@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const WasmPackPlugin = require('@wasm-tool/wasm-pack-plugin');
 
 module.exports = {
@@ -10,9 +11,11 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'www'),
     watchContentBase: true,
-    host: '0.0.0.0',
-    useLocalIp: true,
-    https: true
+    host: 'away.uwu',
+    https: true,
+    key: fs.readFileSync('ssl/cert-key.pem'),
+    cert: fs.readFileSync('ssl/cert.pem'),
+    ca: fs.readFileSync('ssl/ca.pem'),
   },
 
   plugins: [
