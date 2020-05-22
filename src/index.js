@@ -1,4 +1,7 @@
 const AFRAME = require('aframe')
+require('aframe-particle-system-component')
+require('./a-ocean')
+require('super-hands')
 AFRAME.registerComponent('control-gamepad', {
     init: function () {
         let scene = this.el;

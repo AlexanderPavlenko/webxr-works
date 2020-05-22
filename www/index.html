@@ -6,6 +6,40 @@
 <a-scene control-gamepad>
     <a-box position="0 0 -1" animation="property: components.material.material.color; type: color; from: hsl(0, 100%, 50%); to: hsl(300, 100%, 50%); dur: 1000; loop: true"></a-box>
 <!--    <a-gltf-model src="Mq_042420_092008_Scene0.glb" position="0 1 -1" rotation="0 -100 0" scale="3 3 3 "></a-gltf-model>-->
+    <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
+    <a-ocean></a-ocean>
+
+    <a-assets>
+        <a-mixin id="pointer" raycaster="showLine: true; objects: .cube, a-link"
+                 super-hands="colliderEvent: raycaster-intersection;
+                               colliderEventProperty: els;
+                               colliderEndEvent:raycaster-intersection-cleared;
+                               colliderEndEventProperty: clearedEls;">
+        </a-mixin>
+        <a-mixin id="controller-right" mixin="pointer"
+                 vive-controls="hand: right" oculus-touch-controls="hand: right"
+                 windows-motion-controls="hand: right"
+                 gearvr-controls daydream-controls oculus-go-controls>
+        </a-mixin>
+        <a-mixin id="controller-left" mixin="pointer"
+                 vive-controls="hand: left" oculus-touch-controls="hand: left"
+                 windows-motion-controls="hand: left">
+        </a-mixin>
+        <a-mixin id="cube" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5"
+                 hoverable grabbable stretchable draggable droppable
+                 shadow
+                 event-set__dragdrop="_event: drag-drop; geometry.radius: 0.25; geometry.primitive: sphere"
+                 event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
+                 event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"
+                 event-set__dragon="_event: dragover-start; material.wireframe: true"
+                 event-set__dragoff="_event: dragover-end; material.wireframe: false">
+        </a-mixin>
+    </a-assets>
+    <a-entity>
+        <a-entity id="rhand" mixin="controller-right"></a-entity>
+        <a-entity id="lhand" mixin="controller-left"></a-entity>
+    </a-entity>
+    <a-entity class="cube" mixin="cube" position="-0.9 1 -0.9" material="color: blue"></a-entity>
 </a-scene>
 </body>
 </html>
