@@ -222,6 +222,13 @@ acorn@^8.2.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.2.2.tgz#c4574e4fea298d6e6ed4b85ab844b06dd59f26d6"
   integrity sha512-VrMS8kxT0e7J1EX0p6rI/E0FbfOVcvBpbIqHThFv+f8YrZIlMfVotYcXKVPmTvPW8sW5miJzfUFrrvthUZg8VQ==
 
+aframe-extras@^6.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/aframe-extras/-/aframe-extras-6.1.1.tgz#6f158b6c4da12e77d00fd0b97dfe1c72245327df"
+  integrity sha512-w3o3sKfQG+cwe1ZoKUxvMLehh0D/MlvFZeg2XuyIto+Nrs/kGLPcb/fsI5DXM4jociZ3wVQfqcA1BVF+0Nq45A==
+  dependencies:
+    three-pathfinding "^0.7.0"
+
 aframe-particle-system-component@^1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/aframe-particle-system-component/-/aframe-particle-system-component-1.1.3.tgz#9d05732fab223e8c4392d20ae47bb29fa97067e9"
@@ -808,7 +815,7 @@ debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
-"debug@github:ngokevin/debug#noTimestamp":
+debug@ngokevin/debug#noTimestamp:
   version "2.2.0"
   resolved "https://codeload.github.com/ngokevin/debug/tar.gz/ef5f8e66d49ce8bc64c6f282c15f8b7164409e3a"
 
@@ -933,7 +940,7 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
-"document-register-element@github:dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90":
+document-register-element@dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90:
   version "0.5.4"
   resolved "https://codeload.github.com/dmarcos/document-register-element/tar.gz/8ccc532b7f3744be954574caf3072a5fd260ca90"
 
@@ -3170,7 +3177,7 @@ terser@^5.5.1:
     source-map "~0.7.2"
     source-map-support "~0.5.19"
 
-"three-bmfont-text@github:dmarcos/three-bmfont-text#1babdf8507c731a18f8af3b807292e2b9740955e":
+three-bmfont-text@dmarcos/three-bmfont-text#1babdf8507c731a18f8af3b807292e2b9740955e:
   version "2.3.0"
   resolved "https://codeload.github.com/dmarcos/three-bmfont-text/tar.gz/1babdf8507c731a18f8af3b807292e2b9740955e"
   dependencies:
@@ -3187,6 +3194,11 @@ three-buffer-vertex-data@dmarcos/three-buffer-vertex-data#69378fc58daf27d3b1d930
   resolved "https://codeload.github.com/dmarcos/three-buffer-vertex-data/tar.gz/69378fc58daf27d3b1d930df9f233473e4a4818c"
   dependencies:
     flatten-vertex-data "^1.0.0"
+
+three-pathfinding@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/three-pathfinding/-/three-pathfinding-0.7.0.tgz#bf64ec409bee6e7d8e19be96c7b40ebd7ef6f10d"
+  integrity sha512-UwWvzgio1UFe81n5jKHNzB4B+AG3wfZ54OKp7bTb1MHuC3cy6RTtr0dbbiPQQoqxzr+DRArR2DUwQSEknw5+nw==
 
 thunky@^1.0.2:
   version "1.1.0"

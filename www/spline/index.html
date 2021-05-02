@@ -14,6 +14,12 @@
         <script src="/spline.js"></script>
     </head>
     <body>
-        <a-scene spline-scene></a-scene>
+        <a-scene spline-scene>
+            <a-assets>
+                <a-asset-item id="AnimatedCube" src="AnimatedCube.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-entity gltf-model="#AnimatedCube" animation-mixer></a-entity>
+        </a-scene>
     </body>
 </html>
