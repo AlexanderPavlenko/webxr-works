@@ -10,7 +10,7 @@ module.exports = merge(common, {
     devServer: {
         contentBase: path.join(__dirname, 'www'),
         watchContentBase: true,
-        host: 'away.uwu',
+        host: '192.168.44.8',
         https: true,
         key: fs.readFileSync('ssl/cert-key.pem'),
         cert: fs.readFileSync('ssl/cert.pem'),

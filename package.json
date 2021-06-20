@@ -1,6 +1,5 @@
 {
-  "dependencies": {
-  },
+  "dependencies": {},
   "name": "aframe",
   "version": "0.0.1",
   "description": "WebXR study",
@@ -8,6 +7,7 @@
   "author": "Alexander Pavlenko",
   "license": "MIT",
   "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "toasteater/wasm-pack-plugin#upgrade-watchpack",
     "aframe": "^1.0",
     "aframe-extras": "^6.1",
     "aframe-particle-system-component": "^1.1",
@@ -15,8 +15,7 @@
     "webpack": "^5.36",
     "webpack-cli": "^4.6",
     "webpack-dev-server": "^3.10",
-    "webpack-merge": "^5.7",
-    "@wasm-tool/wasm-pack-plugin": "^1.3"
+    "webpack-merge": "^5.7"
   },
   "scripts": {
     "build-spline": "webpack --config webpack.spline.js"
